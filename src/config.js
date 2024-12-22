@@ -408,33 +408,37 @@ export const SING_BOX_CONFIG = {
 };
 
 export const CLASH_CONFIG = {
-	port: 7890,
-	'socks-port': 7891,
+	external-controller: '127.0.0.1:5678'
 	'allow-lan': false,
 	mode: 'Rule',
 	'log-level': 'info',
 	dns: {
-		enable: true,
-		ipv6: true,
+		enable: false,
+		ipv6: false,
 		'respect-rules': true,
 		'enhanced-mode': 'fake-ip',
-		nameserver: [
-			'https://120.53.53.53/dns-query',
-			'https://223.5.5.5/dns-query'
-		],
-		'proxy-server-nameserver': [
-			'https://120.53.53.53/dns-query',
-			'https://223.5.5.5/dns-query'
-		],
-		'nameserver-policy': {
-			'geosite:cn,private': [
-				'https://120.53.53.53/dns-query',
-				'https://223.5.5.5/dns-query'
+		'fake-ip-range': 198.18.0.1/16
+    		use-hosts: true
+    		default-nameserver: [
+			'223.5.5.5', 
+			'119.29.29.29',
+			'8.8.8.8
 			],
-			'geosite:geolocation-!cn': [
-				'https://dns.cloudflare.com/dns-query',
-				'https://dns.google/dns-query'
-			]
+    		nameserver: [
+			'114.114.114.114',
+			'8.8.8.8',
+			'223.5.5.5',
+			'180.76.76.76',
+			'119.29.29.29']
+    		fallback: [
+			'https://doh.dns.sb/dns-query',
+			'https://dns.cloudflare.com/dns-query',
+			'https://dns.twnic.tw/dns-query',
+			'tls://8.8.4.4:853']
+    		fallback-filter: { 
+			geoip: true, 
+			ipcidr: ['240.0.0.0/4',
+				 '0.0.0.0/32'] }
 		}
 	},
 	proxies: [],
