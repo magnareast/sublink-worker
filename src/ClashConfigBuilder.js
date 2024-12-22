@@ -162,6 +162,8 @@ export class ClashConfigBuilder extends BaseConfigBuilder {
                     'obfs-password': proxy.obfs.password,
                     password: proxy.password,
                     auth: proxy.password,
+		    sni: 'www.bing.com',
+		    udp: 'true',
                     'skip-cert-verify': proxy.tls.insecure,
                 };
 			case 'trojan':
