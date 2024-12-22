@@ -409,26 +409,28 @@ export const SING_BOX_CONFIG = {
 
 export const CLASH_CONFIG = {
 	port: 7890,
-	'allow-lan': false,
+	'socks-port': 7891,
+	'allow-lan': true,
 	mode: 'Rule',
 	'log-level': 'info',
 	dns: {
-		enable: false,
-		ipv6: false,
+		enable: true,
+		ipv6: true,
 		'respect-rules': true,
 		'enhanced-mode': 'fake-ip',
-    		'default-nameserver': [
+		nameserver: [
+			'114.114.114.114',
+			'8.8.8.8',
+			'223.5.5.5',
+			'180.76.76.76',
+			'119.29.29.29'
+		],
+		'default-nameserver': [
 			'223.5.5.5', 
 			'119.29.29.29',
 			'114.114.114.114',
 			'8.8.8.8'
 			],
-    		nameserver: [
-			'114.114.114.114',
-			'8.8.8.8',
-			'223.5.5.5',
-			'180.76.76.76',
-			'119.29.29.29']
 		}
 	},
 	proxies: [],
