@@ -417,11 +417,12 @@ export const CLASH_CONFIG = {
 		ipv6: false,
 		'respect-rules': true,
 		'enhanced-mode': 'fake-ip',
-    		use-hosts: true
+		fake-ip-range: '198.18.0.0/15',
     		default-nameserver: [
 			'223.5.5.5', 
 			'119.29.29.29',
-			'8.8.8.8
+			'114.114.114.114',
+			'8.8.8.8'
 			],
     		nameserver: [
 			'114.114.114.114',
