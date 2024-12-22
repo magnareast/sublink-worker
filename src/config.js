@@ -431,8 +431,7 @@ export const CLASH_CONFIG = {
 			'114.114.114.114',
 			'8.8.8.8'
 			],
-		}
-	},
+		},
 	proxies: [],
 	'proxy-groups': [],
 };
