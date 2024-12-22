@@ -408,7 +408,7 @@ export const SING_BOX_CONFIG = {
 };
 
 export const CLASH_CONFIG = {
-	external-controller: '127.0.0.1:5678'
+	port: 7890,
 	'allow-lan': false,
 	mode: 'Rule',
 	'log-level': 'info',
