@@ -417,7 +417,7 @@ export const CLASH_CONFIG = {
 		ipv6: false,
 		'respect-rules': true,
 		'enhanced-mode': 'fake-ip',
-    		default-nameserver: [
+    		'default-nameserver': [
 			'223.5.5.5', 
 			'119.29.29.29',
 			'114.114.114.114',
@@ -434,7 +434,7 @@ export const CLASH_CONFIG = {
 			'https://dns.cloudflare.com/dns-query',
 			'https://dns.twnic.tw/dns-query',
 			'tls://8.8.4.4:853']
-    		fallback-filter: { 
+    		'fallback-filter': { 
 			geoip: true, 
 			ipcidr: ['240.0.0.0/4',
 				 '0.0.0.0/32'] }
