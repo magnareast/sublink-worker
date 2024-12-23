@@ -27,7 +27,7 @@ export const UNIFIED_RULES = [
 		outbound: '🇺🇳 国际服务',
 		site_rules: ['youtube', 'google', 'github', 'gitlab','facebook', 'instagram', 'twitter', 'tiktok', 'netflix', 'hulu', 'disney', 'hbo', 'amazon', 
 			     'bahamut','paypal', 'visa', 'mastercard','stripe','wise', 'aws', 'azure', 'digitalocean', 'heroku', 'dropbox', 'geolocation-!cn'],
-		ip_rules: ['google', 'telegram', 'whatsapp']
+		ip_rules: ['google', 'telegram']
 	},
 	{
 		name: 'Gaming',
@@ -443,16 +443,7 @@ export const CLASH_CONFIG = {
 			'119.29.29.29',
 			'114.114.114.114',
 			'8.8.8.8'
-			],
-		'nameserver-policy': {
-			'geosite:cn,private': [
-				'https://223.5.5.5/dns-query'
-			],
-			'geosite:geolocation-!cn': [
-				'https://dns.cloudflare.com/dns-query',
-				'https://dns.google/dns-query'
-			]
-		}		
+			],	
 		},
 	proxies: [],
 	'proxy-groups': [],
