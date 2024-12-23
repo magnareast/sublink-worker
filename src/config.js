@@ -438,12 +438,21 @@ export const CLASH_CONFIG = {
 			'180.76.76.76',
 			'119.29.29.29'
 		],
-		'default-nameserver': [
+		'proxy-server-nameserver': [
 			'223.5.5.5', 
 			'119.29.29.29',
 			'114.114.114.114',
 			'8.8.8.8'
 			],
+		'nameserver-policy': {
+			'geosite:cn,private': [
+				'https://223.5.5.5/dns-query'
+			],
+			'geosite:geolocation-!cn': [
+				'https://dns.cloudflare.com/dns-query',
+				'https://dns.google/dns-query'
+			]
+		}		
 		},
 	proxies: [],
 	'proxy-groups': [],
