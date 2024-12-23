@@ -26,8 +26,8 @@ export const UNIFIED_RULES = [
 		name: '国际服务',
 		outbound: '🇺🇳 国际服务',
 		site_rules: ['youtube', 'google', 'github', 'gitlab','facebook', 'instagram', 'twitter', 'tiktok', 'netflix', 'hulu', 'disney', 'hbo', 'amazon', 
-			     'bahamut','paypal', 'visa', 'mastercard','stripe','wise', 'aws', 'azure', 'digitalocean', 'heroku', 'dropbox'],
-		ip_rules: ['google', 'telegram']
+			     'bahamut','paypal', 'visa', 'mastercard','stripe','wise', 'aws', 'azure', 'digitalocean', 'heroku', 'dropbox', 'geolocation-!cn'],
+		ip_rules: ['google', 'telegram', 'whatsapp']
 	},
 	{
 		name: 'Gaming',
