@@ -9,13 +9,32 @@ export const UNIFIED_RULES = [
 		outbound: '🛑 广告拦截',
 		site_rules: ['category-ads-all'],
 		ip_rules: []
+	},	
+	{
+		name: '中国直连',
+		outbound: '🇨🇳 中国直连',
+		site_rules: ['bilibili', 'geolocation-cn', 'microsoft', 'cn','apple', 'coursera', 'edx', 'udemy', 'khanacademy', 'category-scholar-!cn', 'linkedin'],
+		ip_rules: ['private','cn']
 	},
 	{
 		name: 'AI Services',
 		outbound: '💬 AI 服务',
 		site_rules: ['openai', 'anthropic','jetbrains-ai','perplexity'],
-		ip_rules: []
+		ip_rules: ['google']
 	},
+	{
+		name: '国际服务',
+		outbound: '🇺🇳 国际服务',
+		site_rules: ['youtube', 'google', 'github', 'gitlab','facebook', 'instagram', 'twitter', 'tiktok', 'netflix', 'hulu', 'disney', 'hbo', 'amazon', 
+			     'bahamut','paypal', 'visa', 'mastercard','stripe','wise', 'aws', 'azure', 'digitalocean', 'heroku', 'dropbox'],
+		ip_rules: ['google', 'telegram']
+	},
+	{
+		name: 'Gaming',
+		outbound: '🎮 游戏平台',
+		site_rules: ['steam', 'epicgames', 'ea', 'ubisoft', 'blizzard'],
+		ip_rules: []
+	},	
 	{
 		name: 'Bilibili',
 		outbound: '📺 哔哩哔哩',
@@ -81,12 +100,6 @@ export const UNIFIED_RULES = [
 		name: 'Streaming',
 		outbound: '🎬 流媒体',
 		site_rules: ['netflix', 'hulu', 'disney', 'hbo', 'amazon','bahamut'],
-		ip_rules: []
-	  },
-	  {
-		name: 'Gaming',
-		outbound: '🎮 游戏平台',
-		site_rules: ['steam', 'epicgames', 'ea', 'ubisoft', 'blizzard'],
 		ip_rules: []
 	  },
 	  {
